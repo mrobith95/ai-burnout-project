@@ -18,10 +18,10 @@ model    = load("data/modelling/model.skops", trusted=[])
 baseline_pred = baseline.predict(X_test)
 baseline_score = mean_absolute_error(y_test, baseline_pred)
 
-print(f'Dummy Regression MAE: {baseline_score:.2f}')
+print(f'Benchmark (Median) MAE: {baseline_score:.2f}')
 
 ## see how model perform
 model_pred = model.predict(X_test)
 model_score = mean_absolute_error(y_test, model_pred)
 
-print(f'GBT MAE             : {model_score:.2f}')
+print(f'Model (GBT) MAE       : {model_score:.2f}')

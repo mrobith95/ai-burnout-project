@@ -18,7 +18,7 @@ background = shap.maskers.Independent(X_test, max_samples=100)
 explainer = shap.Explainer(model, background)
 shap_values = explainer(X_test)
 
-## show base values and rough explanation
+# show base values and rough explanation
 print(shap_values.base_values[0])
 shap.plots.bar(shap_values)
 

@@ -21,8 +21,8 @@ y_train = y_train.to_numpy().ravel()
 kf = KFold(shuffle=True, random_state=300)
 kf.split(X_train,y_train)
 
-## consider baseline: mean
-baseline = DummyRegressor()
+## consider baseline: median (dummy that minimize MAE)
+baseline = DummyRegressor(strategy='median')
 
 ## fit baseline
 baseline.fit(X_train, y_train)
