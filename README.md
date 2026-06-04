@@ -12,3 +12,6 @@ This project consists of 2 steps to answer this question. The first step to fit 
 * Metric: Mean Absoulte Error
 * Benchmark: Median of target
 * Packages used: Available on requirements.txt
+
+## Intended Pipeline
+`download_data.py` ➡️ `data_prep.py` ➡️ `data_preprocessing.py` ➡️ `feature_eng.py` ➡️ `modelling.py` ➡️ `predict.py` ➡️ `shap_explain.py`
