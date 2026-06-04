@@ -14,4 +14,10 @@ This project consists of 2 steps to answer this question. The first step to fit 
 * Packages used: Available on requirements.txt
 
 ## Intended Pipeline
-`download_data.py` ➡️ `data_prep.py` ➡️ `data_preprocessing.py` ➡️ `feature_eng.py` ➡️ `modelling.py` ➡️ `predict.py` ➡️ `shap_explain.py`
+1. `download_data.py`: Download data from kaggle and remove duplicates.
+2. `data_prep.py`: Filter unused columns, deal with NaNs and typos, define training and test data.
+3. `data_preprocessing.py`: Removing outliers and multicollinear features.
+4. `feature_eng.py`: Converting categorical into numerical features.
+5. `modelling.py`: Fit the model to data, hyperparameter optimization included.
+6. `predict.py`: Predict on test data and compare to benchmark.
+7. `shap_explain.py`: Interpret model's prediction.
