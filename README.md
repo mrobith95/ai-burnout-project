@@ -14,6 +14,7 @@ This project consists of 2 steps to answer this question. The first step to fit 
 * Packages used: Available on requirements.txt
 
 ## Intended Pipeline
+Run the following codes in sequence.
 1. `download_data.py`: Download data from kaggle and remove duplicates.
 2. `data_prep.py`: Filter unused columns, deal with NaNs and typos, define training and test data.
 3. `data_preprocessing.py`: Removing outliers and multicollinear features.
